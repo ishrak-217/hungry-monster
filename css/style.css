@@ -1,0 +1,26 @@
+body{
+    background-color: #fffff4;
+}
+section{
+    padding: 6%;
+}
+img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+#error-message{
+    display: none;
+    color: red;
+    text-align: center;
+}
+.btn{
+    border: 1px solid tomato;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    background-color: tomato;
+    padding: 10px 15px;
+}
+#show-result{
+    display: none ;
+    width: 450px;
+}
