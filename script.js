@@ -11,15 +11,13 @@ button.addEventListener('click', (event) => {
 
 function loadInfo(userInput) {
     let url = "";
+    mealHolder.innerHTML = null;
+    resultHolder.innerHTML = null;
     if (userInput.length === 1) {
         url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${userInput}`;
-        mealHolder.innerHTML = null;
-        resultHolder.innerHTML = null;
 
     } else {
         url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${userInput}`;
-        mealHolder.innerHTML = null;
-        resultHolder.innerHTML = null;
     }
     fetch(url)
         .then(res => res.json())
